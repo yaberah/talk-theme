@@ -3,7 +3,7 @@
     <h1 class="title">
       <img class="title__inner" src="./assets/title.svg" alt="">
     </h1>
-    <div class="setting" v-show=" mode === 'setting'">
+    <div class="setting"  v-show=" mode === 'setting'">
       <ul class="setting__list">
         <li class="setting__item" v-for="member in members" :key="member.id">{{ member.name }}<button class="setting__delete" @click="deleteMember(member)">×</button></li>
       </ul>
